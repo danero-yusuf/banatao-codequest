@@ -1,0 +1,460 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lessons | CodeQuest</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+    <header class="topbar">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">&lt;/&gt;</span>
+            <span>
+                CODEQUEST
+                <small>WEB-SLINGER ACADEMY</small>
+            </span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a class="selected" aria-current="page" href="lessons.html">
+                Lessons
+            </a>
+            <a href="activities.html">Activities</a>
+		<a href="missions.html">Missions</a>
+	    <a href="playground.html">Code Lab</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="page">
+
+        <p class="eyebrow">TRAINING HQ / LESSONS</p>
+
+        <h1 class="page-title">
+            LEVEL UP YOUR <span>SKILLS.</span>
+        </h1>
+
+        <p class="intro">
+            Every hero starts somewhere. Master HTML, then add some
+            style with CSS!
+        </p>
+
+        <!-- LESSON 1: HTML -->
+        <section class="lesson">
+
+            <p class="lesson-label">MISSION 01</p>
+
+            <h2>HTML: Build the Structure</h2>
+
+            <p>
+                HTML stands for HyperText Markup Language.
+                It gives a webpage its structure and organizes
+                its content.
+            </p>
+
+            <div class="code-card">
+
+                <div class="code-toolbar">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+
+                    <strong>index.html</strong>
+
+                    <span class="toolbar-spacer"></span>
+
+                    <button
+                        class="copy-btn"
+                        data-copy="lessonCode"
+                        type="button">
+                        COPY CODE
+                    </button>
+                </div>
+
+                <pre id="lessonCode"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My First Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;Welcome to my website!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            </div>
+
+            <h3>Important HTML Tags</h3>
+
+            <ul>
+                <li>
+                    <code>&lt;h1&gt;</code> creates a main heading.
+                </li>
+                <li>
+                    <code>&lt;p&gt;</code> creates a paragraph.
+                </li>
+                <li>
+                    <code>&lt;a&gt;</code> creates a link.
+                </li>
+                <li>
+                    <code>&lt;img&gt;</code> displays an image.
+                </li>
+                <li>
+                    <code>&lt;body&gt;</code> contains the visible
+                    webpage content.
+                </li>
+                <li>
+                    <code>&lt;title&gt;</code> sets the browser tab title.
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- LESSON 2: CSS -->
+        <section class="lesson">
+
+            <p class="lesson-label">MISSION 02</p>
+
+            <h2>CSS: Design Your Suit</h2>
+
+            <p>
+                CSS stands for Cascading Style Sheets.
+                It controls the colors, fonts, spacing, and layout
+                of your webpage.
+            </p>
+
+            <div class="code-card">
+
+                <div class="code-toolbar">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+
+                    <strong>style.css</strong>
+
+                    <span class="toolbar-spacer"></span>
+
+                    <button
+                        class="copy-btn"
+                        data-copy="cssCode"
+                        type="button">
+                        COPY CODE
+                    </button>
+                </div>
+
+                <pre id="cssCode"><code>body {
+    background-color: #101522;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #e62429;
+}
+
+p {
+    font-size: 18px;
+}</code></pre>
+
+            </div>
+
+            <h3>What Do These CSS Properties Do?</h3>
+
+            <ul>
+                <li>
+                    <code>background-color</code> changes the
+                    background color.
+                </li>
+                <li>
+                    <code>color</code> changes the text color.
+                </li>
+                <li>
+                    <code>font-family</code> changes the font.
+                </li>
+                <li>
+                    <code>font-size</code> changes the text size.
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- LESSON 3: HTML LINKS -->
+        <section class="lesson">
+
+            <p class="lesson-label">MISSION 03</p>
+
+            <h2>HTML Links: Swing to Another Page</h2>
+
+            <p>
+                The anchor tag creates a clickable link that takes
+                visitors to another page or website.
+            </p>
+
+            <div class="code-card">
+
+                <div class="code-toolbar">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+
+                    <strong>links.html</strong>
+
+                    <span class="toolbar-spacer"></span>
+
+                    <button
+                        class="copy-btn"
+                        data-copy="linkCode"
+                        type="button">
+                        COPY CODE
+                    </button>
+                </div>
+
+                <pre id="linkCode"><code>&lt;a href="https://example.com"&gt;
+    Visit This Website
+&lt;/a&gt;</code></pre>
+
+            </div>
+
+            <p>
+                The <code>href</code> attribute specifies the
+                destination of the link.
+            </p>
+
+        </section>
+
+
+<!-- ADDITIONAL LESSON: LEARNING OBJECTIVES -->
+
+<section class="lesson">
+    <p class="lesson-label">START HERE</p>
+    <h2>🎯 What You Will Learn</h2>
+
+    <p>By studying these lessons, you will learn how to:</p>
+
+    <ul>
+        <li>Understand the basic structure of an HTML document.</li>
+        <li>Use HTML elements and attributes correctly.</li>
+        <li>Create lists, insert images, and connect webpages.</li>
+        <li>Apply simple CSS styles to improve website design.</li>
+        <li>Build a basic webpage using the concepts you learned.</li>
+    </ul>
+</section>
+
+<!-- LESSON 4: HTML ATTRIBUTES -->
+
+<section class="lesson">
+    <p class="lesson-label">MISSION 04</p>
+    <h2>HTML Attributes: Give Elements More Information</h2>
+
+    <p>
+        HTML attributes provide additional information about an
+        element. They are usually written inside the opening tag.
+        An attribute often has a name and a value.
+    </p>
+
+    <div class="code-card">
+        <div class="code-toolbar">
+            <strong>attributes.html</strong>
+            <span class="toolbar-spacer"></span>
+            <button class="copy-btn" data-copy="attributeCode" type="button">
+                COPY CODE
+            </button>
+        </div>
+
+        <pre id="attributeCode"><code>&lt;a href="https://www.w3schools.com"&gt;
+    Learn HTML
+&lt;/a&gt;
+
+&lt;img src="images/coding.jpg"
+     alt="A computer displaying code"
+     width="300"&gt;</code></pre>
+    </div>
+
+    <h3>Understanding the Attributes</h3>
+
+    <ul>
+        <li><code>href</code> specifies the destination of a link.</li>
+        <li><code>src</code> specifies the location of an image.</li>
+        <li><code>alt</code> provides a text description of an image.</li>
+        <li><code>width</code> specifies the displayed width of an image.</li>
+    </ul>
+
+    <p>
+        <strong>Remember:</strong> The image example uses
+        <code>images/coding.jpg</code> as an example path. You must
+        provide that image in your project for it to display.
+    </p>
+</section>
+
+<!-- LESSON 5: HTML LISTS -->
+
+<section class="lesson">
+    <p class="lesson-label">MISSION 05</p>
+    <h2>HTML Lists: Organize Your Ideas</h2>
+
+    <p>
+        HTML lists help organize related information. There are
+        two common types of lists.
+    </p>
+
+    <h3>1. Unordered List</h3>
+
+    <p>
+        An unordered list displays items with bullet points.
+        Use <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code>.
+    </p>
+
+    <div class="code-card">
+        <div class="code-toolbar">
+            <strong>unordered-list.html</strong>
+            <span class="toolbar-spacer"></span>
+            <button class="copy-btn" data-copy="unorderedCode" type="button">
+                COPY CODE
+            </button>
+        </div>
+
+        <pre id="unorderedCode"><code>&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </div>
+
+    <h3>2. Ordered List</h3>
+
+    <p>
+        An ordered list displays items in a numbered sequence.
+        Use <code>&lt;ol&gt;</code> and <code>&lt;li&gt;</code>.
+    </p>
+
+    <div class="code-card">
+        <div class="code-toolbar">
+            <strong>ordered-list.html</strong>
+            <span class="toolbar-spacer"></span>
+            <button class="copy-btn" data-copy="orderedCode" type="button">
+                COPY CODE
+            </button>
+        </div>
+
+        <pre id="orderedCode"><code>&lt;ol&gt;
+    &lt;li&gt;Open a text editor.&lt;/li&gt;
+    &lt;li&gt;Write your HTML code.&lt;/li&gt;
+    &lt;li&gt;Save the file as index.html.&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+    </div>
+</section>
+
+<!-- LESSON 6: HTML DOCUMENT STRUCTURE -->
+
+<section class="lesson">
+    <p class="lesson-label">MISSION 06</p>
+    <h2>Understand the HTML Document Structure</h2>
+
+    <p>
+        Every basic HTML document follows a structure that helps
+        browsers understand and display the webpage correctly.
+    </p>
+
+    <ul>
+        <li>
+            <code>&lt;!DOCTYPE html&gt;</code> declares that the
+            document uses HTML5.
+        </li>
+        <li>
+            <code>&lt;html&gt;</code> contains the entire HTML document.
+        </li>
+        <li>
+            <code>&lt;head&gt;</code> contains document information
+            and links to resources such as CSS.
+        </li>
+        <li>
+            <code>&lt;title&gt;</code> sets the browser tab title.
+        </li>
+        <li>
+            <code>&lt;body&gt;</code> contains the webpage's visible content.
+        </li>
+    </ul>
+
+    <div class="content-box">
+        <h3>Quick Review</h3>
+        <p>
+            HTML creates the structure, CSS controls the appearance,
+            and JavaScript can make a webpage interactive.
+        </p>
+        <a href="activities.html" class="btn">
+            Test What You Learned →
+        </a>
+    </div>
+</section>
+
+<!-- SUPPLEMENTARY LEARNING RESOURCES -->
+
+<section class="lesson">
+    <p class="lesson-label">BONUS MATERIALS</p>
+    <h2>Explore More About Web Development</h2>
+
+    <p>Use these free resources to continue learning:</p>
+
+    <ul>
+        <li>
+            <a href="https://www.w3schools.com/html/"
+               target="_blank" rel="noopener noreferrer">
+                W3Schools: HTML Tutorial
+            </a>
+            — beginner-friendly explanations and examples.
+        </li>
+        <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+               target="_blank" rel="noopener noreferrer">
+                MDN Web Docs: HTML
+            </a>
+            — reference material about HTML elements and attributes.
+        </li>
+        <li>
+            <a href="https://www.w3schools.com/css/"
+               target="_blank" rel="noopener noreferrer">
+                W3Schools: CSS Tutorial
+            </a>
+            — learn how to style webpages.
+        </li>
+    </ul>
+</section>
+
+        <!-- NEXT BUTTON -->
+        <div class="lesson-navigation">
+            <a class="button" href="activities.html">
+                NEXT: TEST YOUR SKILLS ➜
+            </a>
+
+            <a class="button secondary" href="index.html">
+                ← BACK TO HOME
+            </a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        WITH GREAT CODE COMES GREAT CREATIVITY
+        · © <span data-current-year></span> CODEQUEST
+
+<p class="footer-details">
+    Subject: Computer Programming (COMPROG) |
+    Educational Supplementary Learning Material |
+    Created by: Group 4 - Banatao
+</p>
+
+    </footer>
+
+</body>
+</html>

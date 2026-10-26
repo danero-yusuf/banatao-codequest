@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hero Mission Board | CodeQuest</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="topbar">
+        <a class="brand" href="index.html">🕷️ CodeQuest</a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="activities.html">Activities</a>
+            <a href="missions.html" aria-current="page">Missions</a>
+	    <a href="playground.html">Code Lab</a>
+        </nav>
+    </header>
+
+    <main class="page hero-mission-board" id="hero-missions">
+
+        <!-- MISSION BOARD HEADER -->
+
+        <section class="mission-board-heading">
+            <span class="mission-spider-icon">🕷️</span>
+
+            <h1>HERO MISSION BOARD</h1>
+
+            <p>
+                Welcome, Web-Slinger! Complete your missions,
+                earn Hero Points, and level up your coding skills.
+            </p>
+        </section>
+
+        <!-- PLAYER STATS -->
+
+        <section class="mission-stats" aria-label="Mission statistics">
+
+            <div class="mission-stat">
+                <span class="mission-stat-icon">🏆</span>
+                <span class="mission-stat-number" id="missionsCompleted">0/5</span>
+                <span class="mission-stat-label">MISSIONS COMPLETED</span>
+            </div>
+
+            <div class="mission-stat">
+                <span class="mission-stat-icon">⚡</span>
+                <span class="mission-stat-number" id="heroXP">0 XP</span>
+                <span class="mission-stat-label">HERO POINTS</span>
+            </div>
+
+        </section>
+
+        <!-- PROGRESS BAR -->
+
+        <section class="mission-progress-area">
+
+            <div class="mission-progress-text">
+                <strong>YOUR HERO PROGRESS</strong>
+                <span id="missionProgressText">0% Complete</span>
+            </div>
+
+            <div
+                class="mission-progress-track"
+                id="missionProgressTrack"
+                role="progressbar"
+                aria-label="Mission completion progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0">
+
+                <div
+                    class="mission-progress-fill"
+                    id="missionProgressFill">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- MISSION CARDS -->
+
+        <section class="mission-grid" aria-label="Available missions">
+
+            <!-- MISSION 1 -->
+
+            <article class="mission-card">
+
+                <div class="mission-card-top">
+                    <span class="mission-number">01</span>
+                    <span class="mission-status" id="missionStatus1">
+                        NOT STARTED
+                    </span>
+                </div>
+
+                <div class="mission-emoji">🕸️</div>
+
+                <h2>HTML HERO</h2>
+
+                <p class="mission-description">
+                    Learn the basic structure of HTML and discover
+                    how webpages are built.
+                </p>
+
+                <div class="mission-reward">⚡ REWARD: 100 XP</div>
+
+                <a class="mission-learn-link" href="lessons.html#lessonCode">
+                    STUDY THIS LESSON ↗
+                </a>
+
+                <button class="mission-complete-button"
+                    type="button" data-mission-complete="1">
+                    MARK AS COMPLETE
+                </button>
+
+            </article>
+
+            <!-- MISSION 2 -->
+
+            <article class="mission-card">
+
+                <div class="mission-card-top">
+                    <span class="mission-number">02</span>
+                    <span class="mission-status" id="missionStatus2">
+                        NOT STARTED
+                    </span>
+                </div>
+
+                <div class="mission-emoji">💬</div>
+
+                <h2>TEXT POWER</h2>
+
+                <p class="mission-description">
+                    Practice using headings and paragraphs to organize
+                    the content of a webpage.
+                </p>
+
+                <div class="mission-reward">⚡ REWARD: 100 XP</div>
+
+                <a class="mission-learn-link" href="lessons.html#lessonCode">
+                    STUDY THIS LESSON ↗
+                </a>
+
+                <button class="mission-complete-button"
+                    type="button" data-mission-complete="2">
+                    MARK AS COMPLETE
+                </button>
+
+            </article>
+
+            <!-- MISSION 3 -->
+
+            <article class="mission-card">
+
+                <div class="mission-card-top">
+                    <span class="mission-number">03</span>
+                    <span class="mission-status" id="missionStatus3">
+                        NOT STARTED
+                    </span>
+                </div>
+
+                <div class="mission-emoji">🎨</div>
+
+                <h2>STYLE HERO</h2>
+
+                <p class="mission-description">
+                    Use CSS to change webpage colors, fonts,
+                    backgrounds, and other visual details.
+                </p>
+
+                <div class="mission-reward">⚡ REWARD: 100 XP</div>
+
+                <a class="mission-learn-link" href="lessons.html#cssCode">
+                    STUDY THIS LESSON ↗
+                </a>
+
+                <button class="mission-complete-button"
+                    type="button" data-mission-complete="3">
+                    MARK AS COMPLETE
+                </button>
+
+            </article>
+
+            <!-- MISSION 4 -->
+
+            <article class="mission-card">
+
+                <div class="mission-card-top">
+                    <span class="mission-number">04</span>
+                    <span class="mission-status" id="missionStatus4">
+                        NOT STARTED
+                    </span>
+                </div>
+
+                <div class="mission-emoji">🕷️</div>
+
+                <h2>WEB SLINGER</h2>
+
+                <p class="mission-description">
+                    Learn how HTML links work and how to connect
+                    webpages using anchor tags.
+                </p>
+
+                <div class="mission-reward">⚡ REWARD: 100 XP</div>
+
+                <a class="mission-learn-link" href="lessons.html#linkCode">
+                    STUDY THIS LESSON ↗
+                </a>
+
+                <button class="mission-complete-button"
+                    type="button" data-mission-complete="4">
+                    MARK AS COMPLETE
+                </button>
+
+            </article>
+
+            <!-- MISSION 5 -->
+
+            <article class="mission-card mission-final">
+
+                <div class="mission-card-top">
+                    <span class="mission-number">05</span>
+                    <span class="mission-status" id="missionStatus5">
+                        NOT STARTED
+                    </span>
+                </div>
+
+                <div class="mission-emoji">💥</div>
+
+                <h2>FINAL SHOWDOWN</h2>
+
+                <p class="mission-description">
+                    Test your HTML and CSS knowledge.
+                    Show what you've learned in the quiz!
+                </p>
+
+                <div class="mission-reward">⚡ REWARD: 100 XP</div>
+
+                <a class="mission-learn-link" href="activities.html">
+                    GO TO THE QUIZ ↗
+                </a>
+
+                <button class="mission-complete-button"
+                    type="button" data-mission-complete="5">
+                    MARK AS COMPLETE
+                </button>
+
+            </article>
+
+        </section>
+
+        <!-- COMPLETION MESSAGE -->
+
+        <section
+            class="mission-completion-message"
+            id="missionCompletionMessage"
+            role="status"
+            aria-live="polite">
+
+            <span class="completion-icon">🕸️</span>
+
+            <div>
+                <h2 id="missionMessageTitle">YOUR ADVENTURE BEGINS!</h2>
+
+                <p id="missionMessageText">
+                    Complete your first mission and start earning Hero Points!
+                </p>
+            </div>
+
+        </section>
+
+        <!-- RESET BUTTON -->
+
+        <button
+            type="button"
+            class="mission-reset-button"
+            id="resetMissions">
+            ↻ RESET MISSION PROGRESS
+        </button>
+
+        <p class="mission-back-link">
+            <a href="lessons.html">← Back to Lessons</a>
+        </p>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            &copy; <span data-current-year></span>
+            CodeQuest | Web-Slinger Academy
+        </p>
+        <p>With great code comes great responsibility. 🕷️</p>
+    </footer>
+
+</body>
+</html>

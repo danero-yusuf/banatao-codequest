@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Activities | CodeQuest</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+    <header class="topbar">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">&lt;/&gt;</span>
+            <span>
+                CODEQUEST
+                <small>WEB-SLINGER ACADEMY</small>
+            </span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a class="selected" aria-current="page" href="activities.html">
+                Activities
+            </a>
+		<a href="missions.html">Missions</a>
+		<a href="playground.html">Code Lab</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="page">
+
+        <p class="eyebrow">HERO TRAINING / QUIZ TIME</p>
+
+        <h1 class="page-title">
+            SHOW YOUR <span>SUPER SKILLS.</span>
+        </h1>
+
+        <p class="intro">
+            Answer the questions below and see if you are ready
+            to become a coding hero!
+        </p>
+
+        <!-- QUIZ FORM -->
+        <form id="quizForm" class="quiz">
+
+            <!-- QUESTION 1 -->
+            <fieldset>
+                <legend>
+                    01 / What does HTML stand for?
+                </legend>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q1"
+                        value="a"
+                        required>
+                    HyperText Markup Language
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q1"
+                        value="b">
+                    HighText Machine Language
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q1"
+                        value="c">
+                    Home Tool Markup Language
+                </label>
+            </fieldset>
+
+            <!-- QUESTION 2 -->
+            <fieldset>
+                <legend>
+                    02 / Which tag creates a main heading?
+                </legend>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q2"
+                        value="a"
+                        required>
+                    <code>&lt;p&gt;</code>
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q2"
+                        value="b">
+                    <code>&lt;h1&gt;</code>
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q2"
+                        value="c">
+                    <code>&lt;head&gt;</code>
+                </label>
+            </fieldset>
+
+            <!-- QUESTION 3 -->
+            <fieldset>
+                <legend>
+                    03 / What is CSS mainly used for?
+                </legend>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q3"
+                        value="a"
+                        required>
+                    Storing data
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q3"
+                        value="b">
+                    Structuring page content
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q3"
+                        value="c">
+                    Styling the webpage
+                </label>
+            </fieldset>
+
+            <!-- QUESTION 4 -->
+            <fieldset>
+                <legend>
+                    04 / Which HTML tag creates a link?
+                </legend>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q4"
+                        value="a"
+                        required>
+                    <code>&lt;link&gt;</code>
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q4"
+                        value="b">
+                    <code>&lt;a&gt;</code>
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q4"
+                        value="c">
+                    <code>&lt;img&gt;</code>
+                </label>
+            </fieldset>
+
+            <!-- QUESTION 5 -->
+            <fieldset>
+                <legend>
+                    05 / Which CSS property changes text color?
+                </legend>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q5"
+                        value="a"
+                        required>
+                    background-color
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q5"
+                        value="b">
+                    font-size
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q5"
+                        value="c">
+                    color
+                </label>
+            </fieldset>
+
+            <!-- QUIZ BUTTONS -->
+            <div class="quiz-buttons">
+
+                <button class="button" type="submit">
+                    CHECK ANSWERS ➜
+                </button>
+
+                <button class="button secondary" type="reset">
+                    TRY AGAIN ↻
+                </button>
+
+            </div>
+
+            <!-- SCORE AND FEEDBACK -->
+            <div
+                id="quizFeedback"
+                class="feedback"
+                role="status"
+                aria-live="polite">
+            </div>
+
+        </form>
+
+
+<!-- ADDITIONAL ACTIVITY: BUILD A WEBPAGE -->
+
+<section class="lesson">
+    <p class="lesson-label">MISSION 02 / PRACTICAL CHALLENGE</p>
+
+    <h2>💻 Build Your Own Mini Webpage</h2>
+
+    <p>
+        Imagine that you are creating a personal webpage for a
+        school project. Your webpage should introduce you and
+        share some of your interests.
+    </p>
+
+    <h3>Your Mission</h3>
+
+    <ol>
+        <li>Create a new file named <code>mywebpage.html</code>.</li>
+        <li>Add the basic HTML document structure.</li>
+        <li>Write a heading that introduces yourself.</li>
+        <li>Add a paragraph about your hobbies or interests.</li>
+        <li>Create an unordered list of three favorite things.</li>
+        <li>Add a link to a useful educational website.</li>
+        <li>Save the file and open it in your browser.</li>
+    </ol>
+
+    <h3>Starter Code</h3>
+
+    <div class="code-card">
+        <div class="code-toolbar">
+            <strong>mywebpage.html</strong>
+            <span class="toolbar-spacer"></span>
+            <button class="copy-btn" data-copy="projectCode" type="button">
+                COPY CODE
+            </button>
+        </div>
+
+        <pre id="projectCode"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport"
+          content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Personal Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello! I'm a Future Web Developer&lt;/h1&gt;
+
+    &lt;p&gt;Welcome to my personal webpage!&lt;/p&gt;
+
+    &lt;h2&gt;My Favorite Things&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Favorite hobby&lt;/li&gt;
+        &lt;li&gt;Favorite food&lt;/li&gt;
+        &lt;li&gt;Favorite subject&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;a href="https://www.w3schools.com/html/"&gt;
+        Learn More About HTML
+    &lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <p>
+        <strong>Challenge:</strong> Replace the sample text with
+        your own information. Try changing the heading, adding
+        another list item, and including an image.
+    </p>
+</section>
+
+<!-- GUIDE QUESTIONS -->
+
+<section class="lesson">
+    <p class="lesson-label">MISSION 03 / REFLECTION</p>
+
+    <h2>🧠 Think Like a Developer</h2>
+
+    <p>Answer these questions in your notebook or on a separate document.</p>
+
+    <ol>
+        <li>What is the main purpose of HTML?</li>
+        <li>What is the difference between HTML and CSS?</li>
+        <li>Why do we use attributes in HTML elements?</li>
+        <li>What could happen if an HTML opening tag is not properly written?</li>
+        <li>How can learning HTML help you in school or in the future?</li>
+    </ol>
+
+    <div class="content-box">
+        <h3>Self-Assessment Checklist</h3>
+
+        <p>Before submitting your mini webpage, check your work:</p>
+
+        <ul class="self-check">
+            <li><label><input type="checkbox"> I used the basic HTML structure.</label></li>
+            <li><label><input type="checkbox"> I included a heading and paragraph.</label></li>
+            <li><label><input type="checkbox"> I created a list with at least three items.</label></li>
+            <li><label><input type="checkbox"> I added a working educational link.</label></li>
+            <li><label><input type="checkbox"> I saved and tested my webpage in a browser.</label></li>
+        </ul>
+    </div>
+</section>
+
+
+        <!-- BACK BUTTON -->
+        <div class="lesson-navigation">
+            <a class="button secondary" href="lessons.html">
+                ← REVIEW LESSONS
+            </a>
+
+            <a class="button" href="index.html">
+                BACK TO HOME
+            </a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        WITH GREAT CODE COMES GREAT CREATIVITY
+        · © <span data-current-year></span> CODEQUEST
+
+<p class="footer-details">
+    Subject: Computer Programming (COMPROG) |
+    Educational Supplementary Learning Material |
+    Created by: Group 4 - Banatao
+</p>
+
+    </footer>
+
+</body>
+</html>

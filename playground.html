@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interactive Code Lab | CodeQuest</title>
+
+    <!-- EXISTING SHARED CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- EXISTING SHARED JAVASCRIPT -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="topbar">
+
+        <a class="brand" href="index.html">🕷️ CodeQuest</a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="activities.html">Activities</a>
+            <a href="missions.html">Missions</a>
+            <a href="playground.html" aria-current="page">Code Lab</a>
+        </nav>
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="page playground-section" id="codequest-lab">
+
+        <!-- PAGE INTRODUCTION -->
+
+        <section class="playground-page-heading">
+
+            <p class="lesson-label">HANDS-ON TRAINING</p>
+
+            <h1>🕷️ CodeQuest Interactive Lab</h1>
+
+            <p>
+                Ready to become a coding hero? Write your HTML and CSS
+                in separate editors, then run your code to see your
+                webpage come to life!
+            </p>
+
+        </section>
+
+        <!-- PLAYGROUND INSTRUCTIONS -->
+
+        <section class="playground-tips">
+
+            <h2>📌 How to Use the Playground</h2>
+
+            <ol>
+                <li>Write your webpage content in the HTML editor.</li>
+                <li>Design your webpage using the CSS editor.</li>
+                <li>Click <strong>RUN CODE</strong> to display your result.</li>
+                <li>Check your webpage in the live preview panel.</li>
+                <li>Click <strong>RESET CODE</strong> to restore the starter code.</li>
+            </ol>
+
+        </section>
+
+        <!-- HTML EDITOR -->
+
+        <section class="playground-editor-panel">
+
+            <div class="playground-toolbar">
+
+                <span class="playground-file-icon">&lt;/&gt;</span>
+
+                <strong>index.html</strong>
+
+                <span class="playground-language">HTML EDITOR</span>
+
+            </div>
+
+            <label class="playground-label" for="playgroundEditor">
+                WRITE YOUR HTML CODE
+            </label>
+
+            <textarea
+                id="playgroundEditor"
+                class="playground-textarea"
+                spellcheck="false"
+                autocapitalize="off"
+                autocomplete="off"
+                autocorrect="off"
+                aria-label="HTML code editor"
+            ><h1>Hello, Coding Hero!</h1>
+<p>Welcome to my first webpage.</p>
+<button id="heroButton">Click Me!</button>
+
+<script>
+document.getElementById("heroButton").addEventListener("click", function() {
+    this.textContent = "Great job, Hero!";
+});
+</script></textarea>
+
+            <p class="playground-help">
+                Tip: Use HTML tags like h1, p, and button to create
+                your webpage content.
+            </p>
+
+        </section>
+
+        <!-- CSS EDITOR -->
+
+        <section class="playground-editor-panel css-editor-panel">
+
+            <div class="playground-toolbar">
+
+                <span class="playground-file-icon">🎨</span>
+
+                <strong>style.css</strong>
+
+                <span class="playground-language">CSS EDITOR</span>
+
+            </div>
+
+            <label class="playground-label" for="playgroundCSS">
+                WRITE YOUR CSS CODE
+            </label>
+
+            <textarea
+                id="playgroundCSS"
+                class="playground-textarea"
+                spellcheck="false"
+                autocapitalize="off"
+                autocomplete="off"
+                autocorrect="off"
+                aria-label="CSS code editor"
+            >body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fc;
+    color: #071b35;
+    padding: 20px;
+}
+
+h1 {
+    color: #e62429;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    background-color: #0755a5;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e62429;
+}</textarea>
+
+            <p class="playground-help">
+                Tip: Change colors, fonts, backgrounds, borders, and
+                spacing to customize your webpage.
+            </p>
+
+        </section>
+
+        <!-- PLAYGROUND BUTTONS -->
+
+        <div class="playground-buttons">
+
+            <button
+                id="runPlayground"
+                class="button"
+                type="button">
+                ▶ RUN CODE
+            </button>
+
+            <button
+                id="resetPlayground"
+                class="button secondary"
+                type="button">
+                ↻ RESET CODE
+            </button>
+
+        </div>
+
+        <p
+            id="playgroundStatus"
+            class="playground-status"
+            role="status"
+            aria-live="polite">
+            Your HTML and CSS are ready!
+        </p>
+
+        <!-- LIVE PREVIEW -->
+
+        <section class="playground-preview-panel">
+
+            <div class="playground-toolbar preview-toolbar">
+
+                <span class="preview-indicator"></span>
+
+                <strong>LIVE PREVIEW</strong>
+
+                <span class="toolbar-spacer"></span>
+
+                <span class="playground-language">OUTPUT</span>
+
+            </div>
+
+            <iframe
+                id="playgroundPreview"
+                class="playground-preview"
+                title="Live preview of your HTML and CSS code"
+                sandbox="allow-scripts"
+                referrerpolicy="no-referrer">
+            </iframe>
+
+        </section>
+
+        <!-- STUDENT CHALLENGE -->
+
+        <section class="playground-challenge">
+
+            <h2>🦸 Your Challenge</h2>
+
+            <p>
+                Now that you've tried the starter code,
+                complete these tasks:
+            </p>
+
+            <ol>
+                <li>Change the heading to your own name.</li>
+                <li>Add another paragraph about your favorite hobby.</li>
+                <li>Change the webpage background color using CSS.</li>
+                <li>Change the heading color and font size.</li>
+                <li>Create a new button with your own label.</li>
+                <li>Run your code and observe the result.</li>
+            </ol>
+
+            <p>
+                <strong>Learning goal:</strong> Practice HTML elements,
+                CSS styling, and simple JavaScript interaction in one place.
+            </p>
+
+        </section>
+
+        <!-- PAGE NAVIGATION -->
+
+        <div class="lesson-navigation">
+
+            <a class="button" href="activities.html">
+                NEXT: TEST YOUR SKILLS ➜
+            </a>
+
+            <a class="button secondary" href="missions.html">
+                ← BACK TO MISSIONS
+            </a>
+
+            <a class="button secondary" href="index.html">
+                BACK TO HOME
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <p>
+            WITH GREAT CODE COMES GREAT CREATIVITY
+            · © <span data-current-year></span> CODEQUEST
+        </p>
+
+        <p class="footer-details">
+            Subject: Computer Programming (COMPROG) |
+            Educational Supplementary Learning Material |
+            Created by: Group 4 - Banatao
+        </p>
+
+    </footer>
+
+</body>
+</html>
